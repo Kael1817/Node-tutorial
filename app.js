@@ -10,8 +10,12 @@ app.set('view engine', 'ejs')
 //listen for request
 app.listen(3000)
 
-//
+//Using morgan
 app.use(morgan('dev'))
+
+//middleware & static file
+app.use(express.static('public'))
+
 //Routing 
 //Homepage
 app.get('/', (req, res) =>{
