@@ -1,8 +1,11 @@
 const express = require('express')
-const morgan = require('morgan')  //require morgan 
+const morgan = require('morgan')  
 
 //Setup express app
 const app = express()
+
+//connect to mongoDB
+const dbURI = 'mongodb+srv://netninja:test1234@nodetuts.ut5kx.mongodb.net/?retryWrites=true&w=majority&appName=nodetuts'  //input the password
 
 //Register view engine 
 app.set('view engine', 'ejs')
